@@ -1,6 +1,6 @@
 public class FastFlexible extends FastPiece{
-    public FastFlexible() {
-
+    public FastFlexible(){
+            super();
+        }
 
     }
-}
