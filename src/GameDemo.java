@@ -3,13 +3,17 @@ public class GameDemo
 {
     static Scanner keyboard = new Scanner(System.in);
     public static void main (String[] args) {
-        do {
+            Board placeHolder= new Board();
+            Board.BoardMaker();
+
+
+            do {
             System.out.println("Enter a command (type for details):");
             String choice=keyboard.next();
 
             if (choice.equalsIgnoreCase("print"))
             {
-                Board.BoardMaker();
+                Board.BoardPrinter();
             }
              else if (choice.equals("help")) {
                  System.out.println("Possible commands are as follows:\n" +
@@ -19,30 +23,65 @@ public class GameDemo
                          "help: Displays help.\n" +
                          "exit: Exits the program.");
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
              else if(choice.equals("create")){
-                 PieceCreation();
-            }
+                int xpos= keyboard.nextInt();
+                int ypos= keyboard.nextInt();
+
+                System.out.println("Input a name for the new piece:");
+                String name=keyboard.next();
+                System.out.println("Input a color for the new piece:");
+                String color=keyboard.next();
+                placeHolder.BoardArray[xpos][ypos].setName(name);
+                placeHolder.BoardArray[xpos][ypos].setColor(color);
+
+
+
+
+
+
+
+
+
+
+
+
+             }
+
+
+
+
+
+
+
+
+
              else if(choice.equals("exit")) {
+                 System.out.println("Done");
                  System.exit(0);
             }
              else{
-                 goFuckYourself();
+                 errorMethod();
             }
         }while(true);
     }
-    public static String goFuckYourself(){
+    public static String errorMethod(){
         return "Error: Go fuck yourself";
     }
-    public static void PieceCreation(){
-        int xpos= keyboard.nextInt();
-        int ypos= keyboard.nextInt();
-        System.out.println("Input a name for the new piece:");
-        String name=keyboard.next();
-        System.out.println("Input a color for the new piece:");
-        String color=keyboard.next();
-
-        Piece newPiece=new Piece(name, color);
-        newPiece= BoardArray[xpos][ypos];
-
 }
-}
+//to do:
+//make different piece-types work
+//check for wrong inputs
+//check to see if piece movement is valid (display error message if invalid)

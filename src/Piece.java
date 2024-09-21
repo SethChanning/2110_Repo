@@ -5,15 +5,22 @@ public class Piece {
 
 
     ///constructor
-    public Piece() {
-        this.name=" - ";
+    public Piece(){
+        this.name=" -";
+        this.color="- ";
+    }
+    public Piece(String name, String color, int Position) {
+        this.name=name;
+        this.color=color;
+        this.Position=Position;
+
     }
     ///setters
-    public void setName(){this.name = name;
+    public void setName(String name){this.name = name;
     }
-    public void setColor(){this.color = color;
+    public void setColor(String color){this.color = color;
     }
-    public void setPos(){this.Position = Position;}
+    public void setPos(int Position){this.Position = Position;}
 
     ///getters
      public String getName(){
@@ -28,6 +35,6 @@ public class Piece {
 
 
     public String toString(){
-        return this.name;
+        return this.name+this.color;
     }
 }
