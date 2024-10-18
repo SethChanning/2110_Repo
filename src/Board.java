@@ -18,14 +18,7 @@ public class Board {
             System.out.println();
         }
     }
-
-    public static void PieceCreation()
-    {
-
-
-
-        //finds the object at [xpos][ypos]
-        //setName(name);
-        //setColor(color);
+    public Board move(){
+        return null;
     }
 }
