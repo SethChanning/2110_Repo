@@ -1,0 +1,30 @@
+"Ultimately you always have a finite max of heap to use no matter what platform you are running on. In Windows 32 bit this is
+around 2GB (not specifically heap but total amount of memory per process). It just happens that Java chooses to make the
+default smaller (presumably so that the programmer can't create programs that have runaway memory allocation without running
+into this problem and having to examine exactly what they are doing)". Source:https://stackoverflow.com/questions/37335/how-to-deal-with-java-lang-outofmemoryerror-java-heap-space-error
+Basically the program is running the operating system past its limits. It's using too much memory and so it breaks everything. It goes bast the 32 bit limit.
+
+3 3
+Size: 3 Time:0 ms
+20 3
+Size: 20 Time:1 ms
+100 3
+Size: 100 Time:10 ms
+200 3
+Size: 200 Time:14 ms
+300 3
+Size: 300 Time:30 ms
+400 3
+Size: 400 Time:39 ms
+500 3
+Size: 500 Time:57 ms
+600 3
+Size: 600 Time:83 ms
+700 3
+Size: 700 Time:109 ms
+800 3
+Size: 800 Time:149 ms
+900 3
+Size: 900 Time:198 ms
+1000 3
+Size: 1000 Time:261 ms

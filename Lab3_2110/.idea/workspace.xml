@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1a4f409f-75c4-4147-ac0c-cc11bdc01e3c" name="Changes" comment="done lab. just need to graph">
+      <change afterPath="$PROJECT_DIR$/src/Exercise1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercise3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Binary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Binary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exercise2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercise2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MatrixMult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatrixMult.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2mUE4XvKxFt9ovTCbtxFAiGOE22" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/sethchanning/IdeaProjects/A1_neww/Lab3_2110",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/sethchanning/IdeaProjects/A1_neww/Lab3_2110/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a4f409f-75c4-4147-ac0c-cc11bdc01e3c" name="Changes" comment="" />
+      <created>1727122563912</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727122563912</updated>
+      <workItem from="1727122564913" duration="4198000" />
+      <workItem from="1727185312366" duration="50908000" />
+      <workItem from="1727815258541" duration="47000" />
+    </task>
+    <task id="LOCAL-00001" summary="pretty much finished lab">
+      <option name="closed" value="true" />
+      <created>1727442009402</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727442009402</updated>
+    </task>
+    <task id="LOCAL-00002" summary="done lab. just need to graph">
+      <option name="closed" value="true" />
+      <created>1727457556286</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727457556286</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pretty much finished lab" />
+    <MESSAGE value="done lab. just need to graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="done lab. just need to graph" />
+  </component>
+</project>

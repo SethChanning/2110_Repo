@@ -1,0 +1,27 @@
+Enter a positive integer:
+3
+The execution time to generate binary numbers from 0 to 7.0 is 0 ms
+Enter a positive integer:
+10
+The execution time to generate binary numbers from 0 to 1023.0 is 1 ms
+Enter a positive integer:
+12
+The execution time to generate binary numbers from 0 to 4095.0 is 3 ms
+Enter a positive integer:
+14
+The execution time to generate binary numbers from 0 to 16383.0 is 9 ms
+Enter a positive integer:
+16
+The execution time to generate binary numbers from 0 to 65535.0 is 27 ms
+18
+The execution time to generate binary numbers from 0 to 262143.0 is 67 ms
+20
+The execution time to generate binary numbers from 0 to 1048575.0 is 184 ms
+Enter a positive integer:
+22
+The execution time to generate binary numbers from 0 to 4194303.0 is 642 ms
+24
+The execution time to generate binary numbers from 0 to 1.6777215E7 is 2440 ms
+Enter a positive integer:
+28
+The execution time to generate binary numbers from 0 to 2.68435455E8 is 38657 ms
