@@ -1,6 +1,7 @@
 //This class contains the methods for the BinaryTree class.
 //For the lab Exercise 1, you need to complete the TO-DO methods
 import java.util.ArrayList;
+import java.math.*;
 public class BinaryTree<T> {
 	private T data;
 	private BinaryTree<T> parent;
@@ -120,20 +121,32 @@ public class BinaryTree<T> {
 
 	//this method counts the number of nodes in a BinaryTree recursively
 	public static <T> int countNodes(BinaryTree<T> t){
-	//TO-DO
+		if(t==null){
+			return 0;
+		}
+		return countNodes(t.getLeft())+countNodes(t.getRight())+1;
 	}
 
 
 	// this method returns the height of a BinaryTree
 	public static <T> int findHeight(BinaryTree<T> t) {
-	
-	//TO-DO
+		if(t==null) {
+			return -1;
+		}
+		return Math.max(findHeight(t.left),findHeight(t.right))+1;
 	}
-	
+
+
 	// this method tests whether a tree is height balanced
 	public static <T> boolean heightBalanced(BinaryTree<T> t) {
-	
-	//TO-DO
+		if(t==null){
+			return true;
+		}
+		else if(findHeight(t.getLeft())-findHeight(t.getRight())>1 ||
+				findHeight(t.getRight())-findHeight(t.getLeft())>1){//this makes sure they're either the same or within 1 of each other
+			return false;
+		}
+		return heightBalanced(t);
 	}
 
 	public static <T> void preorder(BinaryTree<T> t) {
@@ -163,7 +176,21 @@ public class BinaryTree<T> {
 	// this method uses an ArrayList to print the data associated with all
 	// nodes/trees in level order
 	public static <T> void levelOrder(BinaryTree<T> t) {
-	
-	TO-DO
+		ArrayList<BinaryTree<T>> nodeList = new ArrayList<BinaryTree<T>>();
+		nodeList.add(t);
+		//add the item to arraylist, print it, find the left/right children nodes & delete it, repeat for each node while arraylist!=empty
+		while(!nodeList.isEmpty()){
+			BinaryTree<T> temp=nodeList.get(0);//we will always look at the first node first
+			System.out.print(nodeList.get(0).getData()+" ");
+			nodeList.remove(0);
+			if(temp.getLeft()!=null){
+				nodeList.add(temp.getLeft());
+			}
+			if(temp.getRight()!=null){
+				nodeList.add(temp.getRight());
+			}
+		}
+
+
 	}
 }
