@@ -10,7 +10,7 @@ public class Huffman {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        ArrayList<BinaryTree<Pair>> S = new ArrayList<>();;
+        ArrayList<BinaryTree<Pair>> S = new ArrayList<>();
         ArrayList<BinaryTree<Pair>> T = new ArrayList<>();
 
         System.out.println("Enter the name of the file with letters and probability: ");
@@ -25,8 +25,27 @@ public class Huffman {
             float prob = fileScanner.nextFloat();
             Pair pair = new Pair(letter, prob);
             BinaryTree<Pair> tree = new BinaryTree<>();
+            tree.makeRoot(pair);
             S.add(tree);
         }//makes the pairs of letters and probabilities
+
+        while(!S.isEmpty()){
+            BinaryTree<Pair> A = S.get(0);
+            BinaryTree<Pair> B = S.get(1);
+            if(T.isEmpty()){
+                S.remove(A);
+                S.remove(B);
+            }
+            else{
+                if(A.getData().getProbability() < B.getData().getProbability()){
+                    S.remove(A);
+                }
+                else if (A.getData().getProbability() > B.getData().getProbability()){
+                    S.remove(B);
+                }
+            }
+
+        }
 
     }
 }
